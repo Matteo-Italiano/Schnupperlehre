@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visitenkarte - Lustig & Professionell</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #eaeaea;
+            margin: 0;
+        }
+        .card {
+            background: white;
+            border: 5px solid #007bff;
+            border-radius: 15px;
+            width: 400px;
+            padding: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            position: relative;
+        }
+        .card img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #007bff;
+            margin-bottom: 10px;
+        }
+        .title {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin: 10px 0;
+            color: #333;
+        }
+        .info {
+            text-align: left;
+            margin-top: 10px;
+        }
+        .info p {
+            margin: 5px 0;
+            font-size: 1em;
+            color: #555;
+        }
+        .fun-badge {
+            position: absolute;
+            top: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #007bff;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 10px;
+            font-size: 0.9em;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="fun-badge">OFFIZIELLER CODE-NERD</div>
+        <img src="image.png" alt="Profilbild">
+        <div class="title">Max Mustermann</div>
+        <div class="info">
+            <p><strong>Geburtsdatum:</strong> 01.01.2000</p>
+            <p><strong>Nationalität:</strong> Deutsch</p>
+            <p><strong>Hobbys:</strong> Programmieren, Wandern, Gaming</p>
+            <p><strong>Spezialität:</strong> Lustige Projekte mit Stil</p>
+        </div>
+    </div>
+</body>
+</html>

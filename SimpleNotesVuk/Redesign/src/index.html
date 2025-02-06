@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simple Notes</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="controller.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="sidebar">
+      <div class="sidebar-header">
+        <div class="logo">
+          <img src="Logo.png" alt="Logo" class="logo" />
+        </div>
+        <div class="search-bar">
+          <input id="searchbar" type="text" placeholder="Search" />
+          <img id="searchbarimage" src="search-bar.png" alt="Search Bar Icon" />
+        </div>
+        <div class="open-modal-button">
+          <button id="open-modal-button" class="icon-button">
+            <img src="n-edit 1.png" alt="Neue Notiz" />
+          </button>
+        </div>
+      </div>
+      <div class="notes-list" id="notes-list"></div>
+    </div>
+
+    <div id="collapse-container" class="collapse-container">
+      <div id="collapse-line" class="collapse"></div>
+      <img id="collapse-button" class="collapse-image" src="linksbutton.png" alt="Collapse Sidebar" status="Open" />
+    </div>
+
+    <button class="delete-button" id="delete-button">
+      <img src="bin 1.png" alt="Löschen" />
+    </button>
+
+    <div class="main-content">
+      <div id="note-display" class="note-display" style="display: none;">
+        <h1 id="note-title-display" class="note-title-display" contenteditable="true">
+          Notiz Titel
+        </h1>
+        <p id="note-date-display" class="note-date-display">Datum</p>
+        <div id="note-content-display" class="note-content-display" contenteditable="true">
+          Notiz Inhalt
+        </div>
+        <button id="save-note-button" class="red-button">Speichern</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

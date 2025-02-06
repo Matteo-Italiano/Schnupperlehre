@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Notes</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="controller.js"></script>
+  </head>
+  <body>
+    <main class="content">
+      <h1 class="title">Simple Notes</h1>
+      <button id="create-note-button" class="red-button">Notiz erstellen</button>
+      <div class="button-group">
+        <button type="button" class="red-button" onclick="controller.importNotes()">Import</button>
+        <button type="button" class="red-button" onclick="controller.exportSelectedNotes()">Export</button>
+      </div>
+      <div id="div-existing-notes" class="notes-container"></div>
+    </main>
+
+    <div id="note-modal" class="modal" style="display: none;">
+      <div class="modal-content">
+        <h2>Neue Notiz erstellen</h2>
+        <div class="input-group">
+          <label for="input-add-note-title">Titel:</label>
+          <input id="input-add-note-title" type="text" placeholder="Notiztitel" />
+        </div>
+        <div class="input-group">
+          <label for="textarea-add-note-text">Text:</label>
+          <textarea id="textarea-add-note-text" rows="4" placeholder="Notiztext"></textarea>
+        </div>
+        <div class="button-group">
+          <button id="save-note-button" class="red-button">Speichern</button>
+          <button id="close-modal-button" class="red-button">Abbrechen</button>
+        </div>
+      </div>
+    </div>    
+  </body>
+</html>

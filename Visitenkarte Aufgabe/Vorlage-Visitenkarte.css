@@ -1,75 +1,18 @@
-.Visitenkarte{
-    display: flex;
-    background-color:rgba(117, 104, 151, 0.432);
-    border-radius: 10px;
-    max-width: 800px;
-    margin: 10px;
+body {
+    
 }
 
-.infos{
-    margin: 10px;
-    display: flex;
-    flex-direction: column;
+
+.card {
+    
 }
 
-.Titel h1, .Titel h3{
-    margin: 5px;
+
+.badge {
+    
 }
 
-.Titel h1{
-    color: navy;
-}
 
-.Titel h3{
-    color: aquamarine;
-}
-
-.Titel{
-    margin: 10px;
-}
-
-.Mail h3, .Mail p{
-    margin: 5px;
-}
-
-.Mail h3{
-    color: red;
-}
-
-.Mail p{
-    color: brown;
-}
-
-.Mail{
-    margin: 10px;
-}
-
-.Phone-Number h3, .Phone-Number p{
-    margin: 5px;
-}
-
-.Phone-Number h3{
-    color: greenyellow;
-}
-
-.Phone-Number{
-    color: green;
-}
-
-.Phone-Number{
-    margin: 10px;
-}
-
-img {
-    max-width: 300px;
-    max-height: 300px;
-}
-
-.Nationalitaet img{
-    max-width: 100px;
-}
-
-.Profilbild{
-    display: flex;
-    align-items: baseline;
+.profile-image {
+ 
 }
